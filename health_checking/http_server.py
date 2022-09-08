@@ -15,7 +15,7 @@ async def start_server(
     check_cb: Callable = None
 ):
     """
-    A coroutine that runs TCP server, responding to healthcheck requests GET HOST:PORT.
+    A coroutine that runs HTTP server, responding to healthcheck requests GET HOST:PORT.
     200 - ok, healthy.
     503 - not healthy.
     Response may contain optional description of health status.
